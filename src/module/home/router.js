@@ -2,7 +2,7 @@ import home from './home.vue'
 
 export default {
   name: 'home',
-  path: '',
+  path: '/home',
   meta: {
     title: '主页'
   },

@@ -1,0 +1,17 @@
+.user{margin:0px;padding:0px;min-height: 450px;}
+.masthead{position: relative;margin:0px;padding:15px 0; width: 100%;  background-color:#505763;color:#fff;}
+.masthead h1{font-size:18px;line-height: 32px;font-weight: 700;}
+.masthead p{font-size:14px;line-height:24px;color:#e4e7ed;}
+
+.data-table-expand {
+  font-size: 0;
+}
+.data-table-expand label {
+  width: 90px;
+  color: #99a9bf;
+}
+.data-table-expand .el-form-item {
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 50%;
+}

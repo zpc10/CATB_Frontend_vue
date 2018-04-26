@@ -1,8 +1,8 @@
 <template>
-  <div class="page container">
-    <h1 class="page-title">用户注册</h1>
+  <div>
+    <h3 class="center">个人资料</h3>
     <el-row type="flex" justify="center">
-      <el-col :span="8">
+      <el-col :span="12">
         <el-form label-position="left" label-width="80px" :model="formRegister" :rules="rules" ref="formRegister">
           <el-form-item label="账号" prop="name">
             <el-input v-model="formRegister.name"></el-input>
@@ -14,7 +14,7 @@
             <el-input v-model="formRegister.checkPassword"></el-input>
           </el-form-item>
           <el-form-item class="center">
-            <el-button type="primary" @click="addUser">立即注册</el-button>
+            <el-button type="primary" @click="addUser">保存</el-button>
             <el-button>取消</el-button>
           </el-form-item>
         </el-form>

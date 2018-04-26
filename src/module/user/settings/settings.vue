@@ -1,25 +1,37 @@
 <template>
-  <div class="page container">
-    <h1 class="page-title">用户注册</h1>
-    <el-row type="flex" justify="center">
-      <el-col :span="8">
-        <el-form label-position="left" label-width="80px" :model="formRegister" :rules="rules" ref="formRegister">
-          <el-form-item label="账号" prop="name">
-            <el-input v-model="formRegister.name"></el-input>
-          </el-form-item>
-          <el-form-item label="密码" prop="password">
-            <el-input v-model="formRegister.password"></el-input>
-          </el-form-item>
-          <el-form-item label="确认密码" prop="checkPassword">
-            <el-input v-model="formRegister.checkPassword"></el-input>
-          </el-form-item>
-          <el-form-item class="center">
-            <el-button type="primary" @click="addUser">立即注册</el-button>
-            <el-button>取消</el-button>
-          </el-form-item>
-        </el-form>
-      </el-col>
-    </el-row>
+  <div>
+    <h3 class="center">账户设置</h3>
+    <div class="cnt-block">
+      <el-tabs value="first" @tab-click="handleClick">
+        <el-tab-pane label="修改密码" name="first">
+          <el-row type="flex" justify="center">
+            <el-col :span="12">
+              <el-form label-position="left" label-width="80px" :model="formRegister" :rules="rules" ref="formRegister">
+                <el-form-item label="旧密码" prop="name">
+                  <el-input v-model="formRegister.name"></el-input>
+                </el-form-item>
+                <el-form-item label="密码" prop="password">
+                  <el-input v-model="formRegister.password"></el-input>
+                </el-form-item>
+                <el-form-item label="确认密码" prop="checkPassword">
+                  <el-input v-model="formRegister.checkPassword"></el-input>
+                </el-form-item>
+                <el-form-item class="center">
+                  <el-button type="primary" @click="addUser">保存</el-button>
+                  <el-button>取消</el-button>
+                </el-form-item>
+              </el-form>
+            </el-col>
+          </el-row>
+        </el-tab-pane>
+        <el-tab-pane label="修改手机号" name="second">
+          修改手机号
+        </el-tab-pane>
+        <el-tab-pane label="修改邮箱" name="third">
+          修改邮箱
+        </el-tab-pane>
+      </el-tabs>
+    </div>
   </div>
 </template>
 
